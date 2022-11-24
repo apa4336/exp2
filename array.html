@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <title>javascript：陣列物件</title>
+    </head>
+    <!-- <body bgcolor="#0FF" background=".\images\Desert.jpg" > 背景圖-->
+    <body>
+        <script>
+            // 建立陣列物件
+            let grades=[60, 90, 100];
+            grades.push(70);
+            grades.push(50);
+            grades.push(86);
+            console.log(grades);
+            // 利用for 迴圈, 逐一取得陣列中的資料
+            // 算平均數, 先算總和
+            let total=0; // 用來紀錄累加的結果
+            for(let i=0;i<grades.length;i++){
+                total=total+grades[i];
+            }
+            let avg=total/grades.length;
+            console.log(avg);
+
+            /*
+            let i=0;
+            while(i<grades.length){
+                console.log(grades[i]);
+                i++;
+            }
+            */
+        </script>
+    </body>
+</html>

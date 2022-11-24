@@ -1,13 +1,120 @@
-<!DOCTYPE html>
 <html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta charset="utf-8" />
-        <title>javascript 快速開始</title>
+        <title>HTML基礎_圖片與多媒體的處理_圖與表的呈現</title>
     </head>
-    <body>
-        <script>
-            console.log("Hello Javascript");
-        </script>
+    <!-- <body bgcolor="#0FF" background=".\images\Desert.jpg" > 背景圖-->
+    <body background="images/switch101.jpg">
+        <header>
+            <center><h1><font color="#FFAAD5" type="Fira Code">HTML基礎_圖與表的呈現</font></h1></center>
+            <hr color="yellow">
+        </header>
+        <main>
+            <section>
+                <center><h3><font color="#FFAAD5" type="Fira Code">&diams;圖與表的呈現&diams;</font></h3></center>
+                <hr color="yellow">
+            </section>
+            <section>
+                <table border="1" cellspacing="0"
+                width="70%" align="center">
+                    <caption><h2><font type="Fira Code">Switch遊戲商品區</font></h2></caption>
+                    <tr bgcolor="#C2FF68" height="50"><!-- 表頭 -->
+                        <th width="10%">類型</th>
+                        <th colspan="3">最新大作</th>
+                    </tr>
+                    <tr height="100">
+                        <th width="10%" rowspan="3" bgcolor=#C7C7E2><br>賣<br>專<br>區</th>
+                        <td width="30%" align="center" height="300">
+                            <a href="images/switch01.jpg" target="_self">
+                                <img src="images/switch01.jpg" width="90%" alt="▉NS《瑪利歐賽車8 豪華版》中文版"></a>
+
+                        </td>
+                        <td width="30%" align="center" height="300">
+                            <a href="images/switch05.jpg" target="_self">
+                                <img src="images/switch05.jpg" width="90%" alt="▉NS《薩爾達傳說 織夢島》中文版"></a>
+                        </td>
+                        <td width="30%" align="center" height="300">
+                            <a href="images/switch04.jpg" target="_self">
+                                <img src="images/switch04.jpg" width="90%" alt="▉NS《集合啦！動物森友會》中文版"></a>
+                        </td>
+                    </tr >
+                    <tr align="center" bgcolor=#C7C7E 2>
+                        <td>▉和寶可夢夥伴踏上旅程主角將遇見傳說的寶可夢「帕路奇亞</td>
+                        <td>▉薩爾達系列罕見的橫向卷軸迷宮<br>於NS重新面世</td>
+                        <td>▉《動物森友會》系列最新作</td>
+                    </tr>
+                    <tr align="center" bgcolor=#C7C7E 2>
+                        <td><a href="https://24h.pchome.com.tw/prod/DGCW13-1900BZBL9?fq=/S/DGCW13">▉NS《寶可夢 明亮珍珠》中文版</a></td>
+                        <td><a href="https://24h.pchome.com.tw/prod/DGBJBH-1900AFJ7J?fq=/S/DGCW13">▉NS《薩爾達傳說 織夢島》中文版</a></td>
+                        <td><a href="https://24h.pchome.com.tw/prod/DGCW13-1900B4I6O?fq=/S/DGCW13">▉NS《集合啦！動物森友會》中文版</a></td>
+                    </tr>
+                    <tr height="100">
+                        <th width="10%" rowspan="3" bgcolor=#FFC1E0>瑪<br>利<br>歐<br>系<br>列</th>
+                        <td width="30%" align="center">
+                            <a href="images/switch03.jpg" target="_self">
+                                <img src="images/switch03.jpg" width="90%" alt="▉NS《瑪利歐賽車8 豪華版》中文版"></a>
+                        </td>
+                        <td width="30%" align="center">
+                            <a href="images/switch07.jpg" target="_self">
+                                <img src="images/switch07.jpg" width="90%" alt="▉NS《路易吉洋樓 3》中文版"></a>
+                        </td>
+                        <td width="30%" align="center">
+                            <a href="images/switch09.jpg" target="_self">
+                                <img src="images/switch09.jpg" width="90%" alt="▉NS《任天堂明星大亂鬥 特別版》中文版"></a>
+                        </td>
+                    </tr>
+                    <tr align="center"  bgcolor=#FFC1E0>
+                        <td>▉最最經典同樂遊玩的賽車遊戲</td>
+                        <td>▉《路易吉鬼屋》續作登上Nint</td>
+                        <td>▉最大規模的明星大亂鬥即將登場</td>
+                    </tr>
+                    <tr align="center"  bgcolor=#FFC1E0>
+                        <td><a href="https://24h.pchome.com.tw/prod/DGCW13-1900B4I2G?fq=/S/DGCW13">▉NS《瑪利歐賽車8 豪華版》中文版</a><br></td>
+                        <td><a href="https://24h.pchome.com.tw/prod/DGCW13-1900B4I5C?fq=/S/DGCW13">▉NS《路易吉洋樓 3》中文版</a></td>
+                        <td><a href="https://24h.pchome.com.tw/prod/DGCW13-1900B4I25?fq=/S/DGCW13">▉NS《任天堂明星大亂鬥 特別版》中文版</a></td>
+                    </tr>
+
+                    <tr height="100">
+                        <th width="10%" rowspan="3" bgcolor=#BBFFBB>老<br>少<br>咸<br>宜<br>區</th>
+                        <td width="30%" align="center">
+                            <a href="images/switch02.jpg" target="_self">
+                                <img src="images/switch02.jpg" width="90%" alt="▉NS《星之卡比 新星同盟》中文版"></a>
+                        </td>
+                        <td width="30%" align="center">
+                            <a href="images/switch06.jpg" target="_self">
+                                <img src="images/switch06.jpg" width="90%" alt="▉NS《大人的Switch腦力鍛鍊》中文版"></a>
+                        </td>
+                        <td width="30%" align="center">
+                            <a href="images/switch08.jpg" target="_self">
+                                <img src="images/switch08.jpg" width="90%" alt="▉NS《世界遊戲大全51》中文版"></a>
+                        </td>
+                     </tr>
+                    <tr align="center" bgcolor=#BBFFBB>
+                        <td>▉ 與可愛的粉紅惡魔一同作戰</td>
+                        <td>▉川島隆太教授所監修--腦力鍛鍊</td>
+                        <td>▉懷舊遊戲大集合<br>多人遊玩增添樂趣</td>
+                    </tr>
+                    <tr align="center" bgcolor=#BBFFBB>
+                        <td><a href="https://24h.pchome.com.tw/prod/DGCW13-1900B4I2A?fq=/S/DGCW13">▉NS《星之卡比 新星同盟》中文版</a><br></td>
+                        <td><a href="https://24h.pchome.com.tw/prod/DGCW13-1900B4I6V?fq=/S/DGCW13">▉NS《大人的Switch腦力鍛鍊》中文版</a></td>
+                        <td><a href="https://24h.pchome.com.tw/prod/DGCW13-1900BF9EW?fq=/S/DGCW13">▉NS《世界遊戲大全51》中文版</a></td>
+                        <td><a href="https://24h.pchome.com.tw/prod/DGCW13-1900BF9EW?fq=/S/DGCW13">▉NS《世界遊戲大全51》中文版</a></td>
+                    </tr>
+
+
+                </table>
+            </section>
+            <section align="center">
+                    <a href="https://24h.pchome.com.tw/prod/DGCW13-1900FEF08?fq=/S/DGCW1X">下一頁</a>
+            </section>
+            <div id="PaginationContainer" class="pagination unblock">
+              <ul></ul>
+            <div class="msg_box">第<span class="value">0</span>/<span class="value">0</span>頁，共<span class="value">0</span>筆</div>
+          </div>
+        </main>
+        <footer>
+            <font color=#006000><center><font size="4"><b>這是由&copy;longlytomorrow&amp;sean的合作網頁所設計</b></font></center></font>
+        </footer>
+        <iframe src='https://script.google.com/macros/s/AKfycbwZ_8lDC7CM9Ap2VgHr6intUAuTnK7jYOfSeLuCyi8QB-kfKGs/exec' width='100%' height='1200' style='border:0;' allowfullscreen='' ></iframe>
+        <script src="123.js"></script>
     </body>
 </html>

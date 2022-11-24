@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html"; charset="utf-8"/>
+        <title>書籍介紹及檢索</title>
+        <link href="jquery-mobile/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css" />
+        <script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+        <script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+        <style>
+        .logo {
+            width: 200px;
+            margin-top: 0px;
+            margin-right: auto;
+            margin-bottom: 0px;
+            margin-left: auto;
+        }
+        .bookcover {
+            width: 210px;
+            margin-top: 0px;
+            margin-right: auto;
+            margin-bottom: 0px;
+            margin-left: auto;
+            box-shadow: 2px 2px 2px 2px #999;
+            border: 5px solid #FFF;	
+            border-radius: 10px;
+        }
+        #details #bookname {
+            font-size: 13px;
+            font-style: normal;
+            font-weight: bold;
+            color: #03C;
+            text-align: center;
+        }
+        </style>   
+        <script language="Javascript">
+            $(function(){ //當上一本書, 下一本按鈕被按
+                $('#showprev').bind('click', showprev);
+                $('#shownext').bind('click', shownext);
+                
+            });
+
+            var index=0; // 目前書籍的索引
+            var curImgSrc,curBook; // 目前取得的書籍圖檔名、書籍名稱
+            // 書籍圖片
+            var aryBookSrc = new Array("ACL035131.jpg",
+                                       "ACA017300.jpg",
+                                       "ACV026500.jpg",
+                                       "CU062100-01-1.jpg",
+                                       "ACV025800.jpg");
+            // 書名
+            var aryBookName = new Array("Android初學特訓班(第二版)",
+                                        "Mac完全上手一本通--OS X Lion",
+                                        "網路拍賣王 - 開店當老闆搶億萬商機",
+                                        "快快樂樂學會聲會影X5",
+                                        "Keynote(Mac x iPad x iPhone)全面啟動");
+            function showprev(){//上一本書
+                index --;//上一個索引
+                if(index<0){index=4};
+                curImgSrc = "images/"+ aryBookSrc[INDEX];//取得目前的圖案名
+                curBook = aryBookName[index];
+                $("#bookpic").attr("src", curImgSrc);
+                $("#bookname").text(curBook); 
+            }
+        </script>
+    </head>
+    <body>
+        <!-- home page -->
+        <div data-role="page" id="home">
+            <div data-role="content"><!-- 內文 -->          
+                <div class="logo">
+                    <p><img src="images/logo.jpg" alt="Y吉工作室LOGO" width="200" height="200" ></p>
+                </div>
+                <h3 align="center">2022/03/11</h3>
+                <h3 align="center">&copy;longlytomorrow</h3>
+                <div class="ui-grid-a">
+                    <div class="ui-block-a"><a href="http://training.derjian.com.tw/" data-role="button" data-icon="gear" data-theme="b" rel="external">德鍵職業訓練中心</a></div>
+                    <div class="ui-block-b"><a href="https://classroom.google.com/u/0/c/NDQ5OTYxNjMxMTU5" data-role="button" data-icon="star" data-theme="b" rel="_blank">110年度網頁前端設計工程師培訓班</a></div>
+                </div>
+            </div>    
+            <div data-role="footer" data-position="fixed" data-id="toolbar"><!-- 頁尾 -->
+                <div data-role="navbar"> <!-- 導覽列 -->
+                    <ul> <!-- 功能選項 -->
+                        <li><a class="ui-btn-active ui-state-persist" href="#home" data-icon="home" data-transition="fade">首頁</a></li>
+                        <li><a href="#details" data-icon="info" data-transition="fade">新書介紹</a></li>
+                        <li><a href="#about" data-icon="search" data-rel="dialog" data-transition="pop">關於</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- details page -->
+        <div data-role="page" id="details">
+            <div data-role="header"><!-- 頁首 -->
+                <a href="#" id="showprev" data-role="button" data-icon="arrow-l" data-theme="b">上一本書</a>
+                <h1>新書介紹</h1>
+                <a href="#" id="shownext" data-role="button" data-icon="arrow-r" data-theme="b">下一本書</a>
+            </div>
+            <div data-role="content"><!-- 本文 -->
+                <div class="bookcover"><!-- 書的圖案 -->
+                    <img src="images/ACL035131.jpg" name="bookpic" width="210" height="284" id="bookpic">
+                </div>
+                <p id="bookname">Android初學特訓班(第二版)</p>
+            </div>
+            <div data-role="footer" data-position="fixed" data-id="toolbar"><!-- 頁尾 -->
+                <div data-role="navbar"> <!-- 導覽列 -->
+                    <ul> <!-- 功能選項 -->
+                        <li><a href="#home" data-icon="home" data-transition="fade">首頁</a></li>
+                        <li><a class="ui-btn-active ui-state-persist" href="#details" data-icon="info" data-transition="fade">新書介紹</a></li>
+                        <li><a href="#about" data-icon="search" data-rel="dialog" data-transition="pop">關於</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

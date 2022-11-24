@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <title>Javascript 流程控制：函式基礎</title>
+    </head>
+    <body>
+        <script>
+            /*
+            // 建立函式
+            function test(){
+                console.log("Hello");
+                console.log("Wrold");
+            }
+            // 呼叫函式
+            test();
+            test();
+            */
+            /*
+            function show(message){
+                console.log(message);
+            }
+            show();
+            show("Hello");
+            show(10);
+            */
+            /*
+            // 做除法
+            function divide(num1,num2){
+                let result=num1/num2;
+                console.log(result);
+            }
+            divide(3,2);
+            divide(10,5);
+            divide("Hello","World");
+            */
+            // 做除法的函式, 用另一種寫法
+            let divide=function(num1,num2){
+                let result=num1/num2;
+                console.log(result);
+            }
+            divide(3,2);
+            divide(10,5);
+            divide("Hello","World");
+        </script>
+    </body>
+</html>

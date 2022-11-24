@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <title>Javascript 流程控制：迴圈指令</title>
+    </head>
+    <body>
+        <script>
+            // break 指令
+            /*let n=0;
+            while(n<5){
+                if(n==3){
+                    break; // 強迫結束迴圈
+                }
+                console.log(n);
+                n++;
+
+            }
+            */
+            // continue 指令
+            for(let n=0;n<5;n++){
+                if(n%2==0){   // 如果 n 除以2的餘數是 0:n 是偶數
+                    continue; // 強迫回到迴圈的上方, 忽略下面的指令, 進入下一圈
+                }
+                console.log(n);
+            }
+        </script>
+    </body>
+</html>
