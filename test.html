@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <title>Javascript：事件處理</title>
+        <style>
+            .btn{
+                background-color: #ffcccc;
+                padding:8px;border-radius: 5px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <p>店員：今天想點什麼？</p>
+        <p>客人：我要<input type="text" id='hamNumId'>個漢堡，還有<input type="text" id='cokeNumId'>杯可樂！</p>
+        <p>店員：<button id='countId'>計算中</button>，一共是<em id='totalId'></em>元。</p>
+        <script>
+            document.getElementById('countId').onclick = function(){
+            //用變數設定漢堡跟可樂的售價
+            var hamPrice = 80;
+            var cokePrice = 20;
+            //選取輸入欄位的 DOM 並宣告變數名，用 value 帶出輸入欄的值。
+            var hamNum = parseInt(document.getElementById('hamNumId').value);
+            var cokeNum = parseInt(document.getElementById('cokeNumId').value);
+            //再用一個變數儲存金額加總
+            var total = hamNum*hamPrice + cokeNum*cokePrice;
+            //把總金額渲染至網頁上
+            document.getElementById('totalId').textContent = total;
+        }
+        </script>
+
+    </body>
+</html>
